@@ -23,6 +23,8 @@ export function createAiView(context) {
       return;
     }
 
+    const messagesContainer = el('div', { class: 'chat-messages' });
+
     if (!controller) {
       controller = new AiChatController({
         getApiKey: () => appState.settings.geminiApiKey,
@@ -36,7 +38,6 @@ export function createAiView(context) {
       controller.setInitialMessages(appState.chatLog);
     }
 
-    const messagesContainer = el('div', { class: 'chat-messages' });
     const quickQuestionsRow = el(
       'div',
       { class: 'chip-row' },
