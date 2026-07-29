@@ -45,7 +45,7 @@ export const GEMINI_DEFAULTS = {
   maxOutputTokens: 1024
 };
 
-export const GOOGLE_CLIENT_ID = '';
+export const GOOGLE_CLIENT_ID = '8772827804-vtfggm9m3lr5dt8tb3amk6vt3v4et6r3.apps.googleusercontent.com';
 
 export const THEME_STORAGE_KEY = 'thcs_theme_preference';
 
